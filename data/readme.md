@@ -1,0 +1,2 @@
+- For additional datasets, please refer to https://github.com/fondress/PDeepPP/tree/main/data.
+- This URL contains the last four datasets from Table 1 in UniProNet. Here, C1 represents S-Carboxyenthylation, C2 represents S-Sulfydration, and the others are the site abbreviations for each PTM.
