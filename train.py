@@ -265,8 +265,9 @@ if __name__ == "__main__":
     import config
 
     parameters = config.get_train_config()
-    criterion = torch.nn.CrossEntropyLoss()
-
+    #criterion = torch.nn.CrossEntropyLoss()
+    criterion = UniProNet_model.LossFunction()
+    
     print("train.shape = ", x_train_encoding.shape)
     print("train_label.shape = ", train_label.shape)
 
