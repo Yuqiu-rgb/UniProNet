@@ -150,7 +150,7 @@ def train_validation(parameters,
     # skf = KFold(n_splits=k_fold,shuffle=True,random_state=15)
     skf = StratifiedShuffleSplit(n_splits=k_fold, random_state=42)  # 42
     for fold, (train_idx, val_idx) in enumerate(skf.split(x_train_encoding, train_label.cpu())):
-        model = UniProNet_model.BERT(parameters).to(device, non_blocking=True)
+        model = UniProNet_model(parameters).to(device, non_blocking=True)
 
         print('**' * 10, 'Fold', fold + 1, 'Processing...', '**' * 10)
         x_train = x_train_encoding[train_idx].to(device, non_blocking=True)
